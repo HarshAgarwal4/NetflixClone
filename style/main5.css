@@ -1,0 +1,147 @@
+.main5{
+    width: 100vw;
+    height: 140vmin;
+    margin: 10px auto;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main5 .faq{
+    width: 80vw;
+    height: 15%;
+    margin-bottom: 10px;
+}
+.main5 .faq h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: 4%;
+
+}
+
+.main5 .question{
+    display: flex;
+    width: 90vw;
+    height: 65%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.main5 .question .qn{
+    width: 80vw;
+    height: 12vh;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main5 .question .qn .qns{
+    width: 80vw;
+    height: 10vh;
+    background-color: #222222;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: large;
+}
+.main5 .question .qn .symbol{
+    width: 80vw;
+    height: 10vh;
+    background-color: #222222;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.main5 .foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 4%;
+    height: 10%;
+}
+
+.main5 .foot h2{
+  font-weight: 100;
+  font-size: medium;
+}
+.main5 .foot .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.main5 .foot .btn button{
+    background-color: rgb(229, 9, 20);
+    padding: 10px 24px;
+    border-radius: 5px;
+}
+.main5 .foot .btn input{
+    background-color: #222222;
+    opacity: 0.95;
+    padding: 10px 30px;
+}
+.main5 .foot .btn input::placeholder{
+   color: white;
+}
+
+@media only screen and (max-width: 960px) {
+
+    .main5{
+        width: 100vw;
+        height: 100vh;
+        margin: 10px auto;
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .main5 .faq{
+        width: 80vw;
+        height: 15%;
+    }
+    .main5 .faq h1{
+        font-size: xx-large;
+    }
+
+    .main5 .question{
+        height: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main5 .question .qn{
+        width: 90vw;
+        height: 12vmin;
+        background-color: #222222;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .main5 .foot{
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin: 10%;
+    }
+}

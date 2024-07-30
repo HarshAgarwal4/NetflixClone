@@ -1,0 +1,78 @@
+.main1{
+    height: 80vh;
+    width: 100vw;
+    background-color: black;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main1 .box1{
+    width: 75%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.main1 .box1 .title1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.main1 .box1 .title1 h1{
+   font-size: 2.5rem;
+   font-weight: bolder;
+}
+.main1 .box1 .title1 p{
+   font-size: large;
+}
+
+.main1 .box1 .screen1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.main1 .box1 .screen1 img{
+    width: 40vmax;
+    object-fit: contain;
+    position: absolute;
+    align-self: center;
+}
+.main1 .box1 .screen1 video{
+    width: 30vmax;
+    object-fit: contain;
+
+}
+
+@media only screen and (max-width: 960px){
+    .main1 .box1{
+        width: 75%;
+        height: 80%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    .main1 .box1 .title1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 500px){
+    .main1 .box1 .screen1 img{
+        width: 25vmax;
+        object-fit: contain;
+        position: absolute;
+        align-self: center;
+    }
+    .main1 .box1 .screen1 video{
+        width: 19vmax;
+        object-fit: contain;
+    }
+}

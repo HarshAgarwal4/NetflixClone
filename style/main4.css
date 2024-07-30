@@ -1,0 +1,71 @@
+.main4{
+    height: 80vh;
+    width: 100vw;
+    background-color: black;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main4 .box4{
+    width: 75%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.main4 .box4 .title4{
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.main4 .box4 .title4 h1{
+   font-size: 2.5rem;
+   font-weight: bolder;
+}
+.main4 .box4 .title4 p{
+   font-size: large;
+}
+
+.main4 .box4 .screen4{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.main4 .box4 .screen4 img{
+    width: 40vmax;
+    object-fit: contain;
+    position: absolute;
+    align-self: center;
+}
+
+@media only screen and (max-width: 960px){
+    .main4 .box4{
+        width: 75%;
+        height: 80%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    .main4 .box4 .title4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .main4 .box4 .screen4 img{
+        width: 25vmax;
+        object-fit: contain;
+        position: absolute;
+        align-self: center;
+    }
+}

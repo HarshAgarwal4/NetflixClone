@@ -1,0 +1,116 @@
+.main3{
+    height: 80vh;
+    width: 100vw;
+    background-color: black;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main3 .box3{
+    width: 75%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.main3 .box3 .title3{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.main3 .box3 .title3 h1{
+   font-size: 2.5rem;
+   font-weight: bolder;
+}
+.main3 .box3 .title3 p{
+   font-size: large;
+}
+
+.main3 .box3 .screen3{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.main3 .box3 .screen3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main3 .box3 .screen3 .sardar{
+    width: 40vmax;
+    height: 80%;
+    background-image: url("assets/images/device-pile-in.png");
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 10;
+}
+
+.main3 .box3 .screen3 .lcd{
+    width: 25vmax;
+    margin-bottom: 20%;
+    position: absolute;
+}
+
+.main3 .box3 .screen3 .lcd video{
+    width: 24vmax;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 960px){
+    .main3 .box3{
+        width: 75%;
+        height: 80%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    .main3 .box3 .title3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 500px){
+    .main3 .box3 .screen3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .main3 .box3 .screen3 .sardar{
+        width: 30vmax;
+        height: 80%;
+        background-image: url("assets/images/device-pile-in.png");
+        background-position: center center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 10;
+    }
+    
+    .main3 .box3 .screen3 .lcd{
+        width: 19vmax;
+        margin-bottom: 20%;
+        position: absolute;
+    }
+    
+    .main3 .box3 .screen3 .lcd video{
+        width: 18vmax;
+        object-fit: contain;
+        position: relative;
+        top: 15px;
+    }
+}

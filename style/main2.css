@@ -1,0 +1,71 @@
+.main2{
+    height: 80vh;
+    width: 100vw;
+    background-color: black;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main2 .box2{
+    width: 75%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.main2 .box2 .title2{
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.main2 .box2 .title2 h1{
+   font-size: 2.5rem;
+   font-weight: bolder;
+}
+.main2 .box2 .title2 p{
+   font-size: large;
+}
+
+.main2 .box2 .screen2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.main2 .box2 .screen2 img{
+    width: 40vmax;
+    object-fit: contain;
+    position: absolute;
+    align-self: center;
+}
+
+@media only screen and (max-width: 960px){
+    .main2 .box2{
+        width: 75%;
+        height: 80%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    .main2 .box2 .title2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .main2 .box2 .screen2 img{
+        width: 25vmax;
+        object-fit: contain;
+        position: absolute;
+        align-self: center;
+    }
+}
